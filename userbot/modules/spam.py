@@ -62,7 +62,7 @@ async def tiny_pic_spam(e):
             "PicSpam was executed successfully")
 
 
-@register(outgoing=True, pattern="^.delayspam (.*)")
+@register(outgoing=True, pattern="^.supermen (.*)")
 async def spammer(e):
     spamDelay = float(e.pattern_match.group(1).split(' ', 2)[0])
     counter = int(e.pattern_match.group(1).split(' ', 2)[1])
@@ -87,7 +87,7 @@ CMD_HELP.update({
 \nUsage: Spam the text word by word.\
 \n\n`.picspam` <count> <link to image/gif>\
 \nUsage: As if text spam was not enough !!\
-\n\n`.delayspam` <delay> <count> <text>\
+\n\n`.supermen` <delay> <count> <text>\
 \nUsage: `.bigspam` but with custom delay.\
 \n\n\nNOTE : Spam at your own risk !!"
 })
