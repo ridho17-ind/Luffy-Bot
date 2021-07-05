@@ -4,9 +4,6 @@ from userbot.events import register
 from userbot import CMD_HELP
 import asyncio
 
-# Languange en to id from Linux-Userbot
-# Thanks Vicky
-
 
 @register(outgoing=True, pattern="^.ftyping(?: |$)(.*)")
 async def _(event):
