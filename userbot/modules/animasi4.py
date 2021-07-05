@@ -12,7 +12,6 @@ async def typewriter(typew):
     await typew.edit("`Kedua kamu manis`")
     sleep(1)
     await typew.edit("`Dan yang terakhir adalah kamu bukan jodohku`")
-# Create by myself @localheart
 
 
 @register(outgoing=True, pattern='^.punten(?: |$)(.*)')
@@ -41,14 +40,13 @@ async def typewriter(typew):
                      "\n**Masih Ku Pantau**")
 
 
-# Create by myself @localheart
-
 CMD_HELP.update({
-    "Linux":
-    "🐧CMD🐧`.Linux`\
+    "animasi4":
+    "CMD`.Linux`\
     \nUsage: alive bot.\
-    \n\n🐧CMD🐧`.sadboy`\
+    \n\nCMD`.sadboy`\
     \nUsage: hiks\
-    \n\n🐧CMD🐧`.punten` ; 🐧CMD🐧`.pantau`\
+    \n\nCMD`.punten`\
+    \n\nCMD`.pantau`\
     \nUsage: coba aja."
 })
