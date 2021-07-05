@@ -67,7 +67,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             )
             return repo.__del__()
         await event.edit('`[HEROKU]:'
-                         '\nDyno 🐧Linux-Userbot🐧 Sedang Dalam Proses, Mohon Menunggu 7-8 Menit`'
+                         '\nDyno 📍Treep-Bot📍 Sedang Dalam Proses, Mohon Menunggu 7-8 Menit`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -91,7 +91,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`🐧Linux🐧 Berhasil Di Deploy!\n" "Restarting, Mohon Menunggu Tuan.....`")
+            await event.edit("`📍Treep-Bot📍 Berhasil Di Deploy!\n" "Restarting, Mohon Menunggu Tuan.....`")
             await asyncio.sleep(15)
             await event.delete()
 
@@ -115,9 +115,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('**🐧Linux-Userbot🐧** `Berhasil Di Update!`')
+    await event.edit('**📍Treep-Bot📍** `Berhasil Di Update!`')
     await asyncio.sleep(1)
-    await event.edit('**🐧Linux-Userbot🐧** `Di Restart....`')
+    await event.edit('**📍Treep-Bot📍** `Di Restart....`')
     await asyncio.sleep(1)
     await event.edit('`Mohon Menunggu Beberapa Detik Sayang`')
     await asyncio.sleep(10)
@@ -188,13 +188,13 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n**🐧Linux-Userbot🐧 Sudah Versi Terbaru**\n')
+            f'\n**📍Treep-Bot📍 Sudah Versi Terbaru**\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f'**🛠️ Pembaruan Untuk 🐧Linux-Userbot🐧 [{ac_br}]:\n\n🛠️ Pembaruan:**\n`{changelog}`'
+        changelog_str = f'**🛠️ Pembaruan Untuk 📍Treep-Bot📍 [{ac_br}]:\n\n🛠️ Pembaruan:**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -214,12 +214,12 @@ async def upstream(event):
         await event.edit(
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
     else:
-        await event.edit('`🛠️ Proses Update 🐧Linux-Userbot🐧, Loading....1%`')
-        await event.edit('`🛠️ Proses Update 🐧Linux-Userbot🐧, Loading....20%`')
-        await event.edit('`🛠️ Proses Update 🐧Linux-Userbot🐧, Loading....35%`')
-        await event.edit('`🛠️ Proses Update 🐧Linux-Userbot🐧, Loading....77%`')
-        await event.edit('`🛠️ Proses Update 🐧Linux-Userbot🐧, Updating...90%`')
-        await event.edit('`🛠️ Proses Update 🐧Linux-Userbot🐧, Mohon Menunggu Sayang....100%`')
+        await event.edit('`🛠️ Proses Update 📍Treep-Bot📍, Loading....1%`')
+        await event.edit('`🛠️ Proses Update 📍Treep-Bot📍, Loading....20%`')
+        await event.edit('`🛠️ Proses Update 📍Treep-Bot📍, Loading....35%`')
+        await event.edit('`🛠️ Proses Update 📍Treep-Bot📍, Loading....77%`')
+        await event.edit('`🛠️ Proses Update 📍Treep-Bot📍, Updating...90%`')
+        await event.edit('`🛠️ Proses Update 📍Treep-Bot📍, Mohon Menunggu Sayang....100%`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
@@ -234,9 +234,9 @@ async def upstream(event):
 CMD_HELP.update({
     'update':
     ".update"
-    "\n🐧CMD🐧: Untuk Melihat Pembaruan Terbaru 🐧Linux-Userbot🐧."
+    "\nCMD: Untuk Melihat Pembaruan Terbaru 📍Treep-Bot📍."
     "\n\n.update now"
-    "\n🐧CMD🐧: Memperbarui 🐧Linux-Userbot🐧."
+    "\nCMD: Memperbarui 📍Treep-Bot📍."
     "\n\n.update deploy"
-    "\n🐧CMD🐧: Memperbarui 🐧Linux-Userbot🐧 Dengan Cara Deploy Ulang."
+    "\nCMD: Memperbarui 📍Treep-Bot📍 Dengan Cara Deploy Ulang."
 })
