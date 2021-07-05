@@ -1,7 +1,7 @@
 {
-  "name": "Linux-Userbot",
-  "description": "[Linux-Userbot] USERBOT TELEGRAM.",
-  "logo": "https://telegra.ph/file/a347ed9a0b3ae6db7b24c.jpg",
+  "name": "Treep-Bot",
+  "description": "[Treep-Bot] USERBOT TELEGRAM.",
+  "logo": "https://telegra.ph/file/9046e7a773c1694deda14.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/ferikunn/Linux-Userbot",
+  "repository": "https://github.com/ferikunn/Treep-Bot",
   "telegram": "https://t.me/xflicks",
-  "success_url": "https://t.me/xflicks",
+  "success_url": "https://t.me/treepdisini",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -155,14 +155,14 @@
     },
     "DEFAULT_BIO": {
       "description": "Default Bio Mu.",
-      "value": "LINUX-USERBOT",
+      "value": "Nothing",
       "required": false
     },
     "ALIVE_NAME": {
       "description": "Nama untuk menunjukan pesan .alive",
       "required": false
     },
-    "LINUX_TEKS_KUSTOM": {
+    "TREEP_TEKS_KUSTOM": {
       "description": "Kustom Pesan Alive Mu Untuk Perintah .linux (Isi Terserah)",
       "required": false
     },
