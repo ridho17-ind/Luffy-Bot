@@ -126,7 +126,6 @@ async def repo_is_here(wannasee):
         "╭─━━━━━━━━━━━━━─╯\n"
         "│👨‍💻 **Creator :** [Feri](t.me/xflicks)\n"
         "╰━━━━━━━━━━━━━━━╯\n"
-        "  Tutorial    : [Tutorial Deploy](https://telegra.ph/Deploy-04-06)"
         "  Deploy      : [Tekan Disini](https://heroku.com/deploy?template=https://github.com/ferikunn/Treep-Bot)"
     )
 
