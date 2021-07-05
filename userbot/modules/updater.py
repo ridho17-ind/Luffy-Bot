@@ -53,7 +53,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari Linux Userbot.`'
+                ' untuk dapat deploy perubahan terbaru dari 📍Treep-Bot📍.`'
             )
             repo.__del__()
             return
@@ -63,7 +63,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy Linux Userbot dyno.`'
+                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy 📍Treep-Bot📍.`'
             )
             return repo.__del__()
         await event.edit('`[HEROKU]:'
@@ -126,7 +126,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#BOT \n"
-            "**Linux-Userbot Telah Di Perbarui**")
+            "**📍Treep-Bot📍 Telah Di Perbarui**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -139,7 +139,7 @@ async def update(event, repo, ups_rem, ac_br):
 @ register(outgoing=True, pattern=r"^.update(?: |$)(now|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
-    await event.edit("`Sedang melakukan Pembaharuan, mengentot ke repo...🐧`")
+    await event.edit("`Sedang melakukan Pembaharuan.........`")
     conf = event.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
     force_update = False
@@ -208,7 +208,7 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond('**Perintah Untuk Update Linux Userbot**\n >`.update now`\n >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari Linux Userbot.__')
+        return await event.respond('**Perintah Untuk Update 📍Treep-Bot📍**\n >`.update now`\n >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru.__')
 
     if force_update:
         await event.edit(
