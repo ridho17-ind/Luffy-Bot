@@ -51,7 +51,7 @@ async def randomise(items):
 async def sleepybot(time):
     """ For .sleep command, let the userbot snooze for a few second. """
     counter = int(time.pattern_match.group(1))
-    await time.edit("`Saya tidur dulu Tuan...🐧`")
+    await time.edit("`Selamat tinggal ngentod...`")
     if BOTLOG:
         str_counter = time_formatter(counter)
         await time.client.send_message(
@@ -59,29 +59,29 @@ async def sleepybot(time):
             f"You put the bot to sleep for {str_counter}.",
         )
     sleep(counter)
-    await time.edit("`🐧OFF🐧.`")
+    await time.edit("OFF")
 
 
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan Linux-Userbot....`")
+    await event.edit("`Mematikan 📍Treep-Bot📍....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#SHUTDOWN \n"
-                                        "`Linux-Userbot Telah Dimatikan`")
+                                        "`📍Treep-Bot📍 Telah Dimatikan`")
     await bot.disconnect()
 
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting Linux-Userbot...`")
+    await event.edit("`Restarting 📍Treep-Bot📍...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`Linux-Userbot Telah Di Restart`")
+                                        "`📍Treep-Bot📍 Telah Di Restart`")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
@@ -93,7 +93,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Beberapa Repo Dan File:\n"
-        "\n[🐧Linux-Userbot🐧 Repo](https://github.com/ferikunn/Linux-Userbot/blob/Linux-Userbot/README.md)"
+        "\n[Repositories](https://github.com/ferikunn/Treep-Bot/blob/Treep-Bot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Setup Guide - Google Drive](https://telegra.ph/How-To-Setup-GDrive-11-02)"
         "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
@@ -122,12 +122,12 @@ async def repo_is_here(wannasee):
     await wannasee.edit(
         "╭─━━━━━━━━━━━━━─╮\n"
         "                  Repo\n"
-        "     [🐧Linux-Userbot🐧](https://github.com/ferikunn/Linux-Userbot)\n"
+        "     [Treep-Bot](https://github.com/ferikunn/Treep-Bot)\n"
         "╭─━━━━━━━━━━━━━─╯\n"
-        "│👨‍💻 **Mastah :** [Feri](t.me/xflicks)\n"
+        "│👨‍💻 **Creator :** [Feri](t.me/xflicks)\n"
         "╰━━━━━━━━━━━━━━━╯\n"
         "  Tutorial    : [Tutorial Deploy](https://telegra.ph/Deploy-04-06)"
-        "  Deploy      : [Tekan Disini](https://heroku.com/deploy?template=https://github.com/ferikunn/Linux-Userbot)"
+        "  Deploy      : [Tekan Disini](https://heroku.com/deploy?template=https://github.com/ferikunn/Treep-Bot)"
     )
 
 
