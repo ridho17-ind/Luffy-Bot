@@ -1,5 +1,5 @@
-# Linux Userbot
-![Linux-Userbot Logo](https://telegra.ph/file/a347ed9a0b3ae6db7b24c.jpg)
+# Treep Userbot
+![Treep-Userbot Logo](https://telegra.ph/file/9046e7a773c1694deda14.jpg)
 
 
 
@@ -8,7 +8,7 @@
 
 ### Repo Linux Userbot
 Repo Yang Dibuat [Feri](https://t.me/xflicks) Dari Berbagai Repo Userbot Github 
-String_Session [Tekan](https://replit.com/@ferikunn/String-Sesson-Saya)
+String_Session [Tekan](https://replit.com/@mrismanaziz/stringen?lite=1&outputonly=1)
 
 ## Cara Deploy 👷
 
@@ -26,13 +26,13 @@ String_Session [Tekan](https://replit.com/@ferikunn/String-Sesson-Saya)
 
 ## Group Support 🛠
 
-   <a href="https://t.me/masukajaudhh"><img src="https://img.shields.io/badge/Group%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=220px></a></p>
+   <a href="https://t.me/Treepdisini"><img src="https://img.shields.io/badge/Group%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=220px></a></p>
 
 
-## <p align="center">DEPLOY Linux-Userbot</p>
+## <p align="center">DEPLOY Treep-Bot</p>
 
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ferikunn/Linux-Userbot/tree/Linux-Userbot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-magenta?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ferikunn/Treep-Bot/tree/Treep-Bot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-magenta?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 <br>
 </p>
