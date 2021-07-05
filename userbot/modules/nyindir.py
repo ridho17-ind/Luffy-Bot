@@ -36,13 +36,22 @@ async def typewriter(typew):
     await typew.edit("**YA AMPUN LU NGOMONG APA? GA NYAMBUNG KONTOL KAYA KEHIDUPAN LU MAKANYA ORG ORG KAYA LU GABAKALN MAJU HIDUPNYA APA LAGI ORG ORG BAWAHAN KAYA LU.**")
 
 
+@register(outgoing=True, pattern='^.kismin(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("**GUA KASIH TAU NI AMA LO MENDING PIKIRIN BEROBAT MAU GMNA LO MAKAN AJA SUSAH HARI HARI IDUP LO SUSAH MULU NGEMIS GA DIKASIH EMAK LO NGELONTE GA LAKU GEGARA MEMEKNYA SUMBING PANUAN KURAPAN BECEK KEK APAAN TAU BOKAP LO KAN UDH CACAT ADEK LO JUAL TISU GA LAKU LAKU MENDING NIH YA GUA KASIH TAU LO ITU MENDING BIKIN BPJS KE PEMERINTAH EH PERCUMA SI PEMERINTAH JUGA MALES NGURUSIN BPJS ORANG MISKIN GEMBEL HINA KAYA LO SECARA LO ITU GA GUNA LAGI DI DUNIA MENDING ITU LO MATI ABIS ITUU GUA SURUH ADE LO KASIH TAU DIMANA KUBURAN LO NANTI NIH YA GUA KENCINGIN KUBURAN LO ABIS ITU GUA GAMBAR BATU NISAN LO PAKE PILOK GAMBAR KONTOL YANG GEDE AMA GRAVITY TULISAN DIA ATHEIS GAUSAH DIKASIH PAPAN NISAN KONTOL.**")
+
+
 CMD_HELP.update({
     "nyindir1":
-    "•🐧CMD🐧: `.tua`\
+    "•CMD: `.tua`\
     \n•Penjelasan: Gatau cek sendiri asu\
-    \n\n•🐧CMD🐧: `.stress`\
+    \n\n•CMD: `.stress`\
     \n•Penjelasan: Gatau cek sendiri asu\
-    \n\n•🐧CMD🐧: `.gajelas`\
+    \n\n•CMD: `.gajelas`\
+    \n•Penjelasan: Nyindir orang Goblok\
+    \n\n•CMD: `.kismin`\
     \n•Penjelasan: Nyindir orang Goblok."
 
 
