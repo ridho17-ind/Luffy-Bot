@@ -78,7 +78,7 @@ CMD_HELP.update({
     \n•Penjelasan: Nyindir orang Goblok\
     \n\n•CMD: `.nyg`\
     \n•Penjelasan: bacotin org nyenggol."
-    \n\n•CMD: `.lah`\
+    \n\n•CMD: `.lah`
     \n•Penjelasan: bacotin org kalah."
 
 
