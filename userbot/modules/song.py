@@ -135,17 +135,17 @@ Connected to server...
 async def original(event):
     if not event.pattern_match.group(1):
         return await event.edit("Beri Saya Sebuah Judul Lagu Untuk Mencari Lirik.\n**Contoh** : `.lirik` <Judul Lagu>")
-    geez = event.pattern_match.group(1)
+    xnxx = event.pattern_match.group(1)
     event = await event.edit("`Sedang Mencari Lirik Lagu...`")
     dc = random.randrange(1, 3)
     if dc == 1:
-        piki = "AIzaSyAyDBsY3WRtB5YPC6aB_w8JAy6ZdXNc6FU"
+        feri = "AIzaSyAyDBsY3WRtB5YPC6aB_w8JAy6ZdXNc6FU"
     if dc == 2:
-        piki = "AIzaSyBF0zxLlYlPMp9xwMQqVKCQRq8DgdrLXsg"
+        feri = "AIzaSyBF0zxLlYlPMp9xwMQqVKCQRq8DgdrLXsg"
     if dc == 3:
-        piki = "AIzaSyDdOKnwnPwVIQ_lbH5sYE4FoXjAKIQV0DQ"
-    extract_lyrics = sl(f"{piki}", "15b9fb6193efd5d90")
-    sh1vm = extract_lyrics.get_lyrics(f"{geez}")
+        feri = "AIzaSyDdOKnwnPwVIQ_lbH5sYE4FoXjAKIQV0DQ"
+    extract_lyrics = sl(f"{feri}", "15b9fb6193efd5d90")
+    sh1vm = extract_lyrics.get_lyrics(f"{xnxx}")
     a7ul = sh1vm["lyrics"]
     await event.client.send_message(event.chat_id, a7ul, reply_to=event.reply_to_msg_id)
     await event.delete()
