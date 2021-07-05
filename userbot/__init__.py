@@ -180,7 +180,7 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/a347ed9a0b3ae6db7b24c.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/9046e7a773c1694deda14.jpg"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -319,7 +319,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "``📍Treep-Bot📍 Telah Aktif```")
+    await bot.send_message(BOTLOG_CHATID, "`📍Treep-Bot📍 Telah Aktif`")
     return
 
 with bot:
@@ -447,7 +447,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Eror 404 not found Saya Userbot Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
+                reply_pop_up_alert = f"Eror 404 not found 📍Treep-Bot📍 Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -465,7 +465,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Eror 404 not found Linux Userbot Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
+                reply_pop_up_alert = f"Eror 404 not found 📍Treep-Bot📍 Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -496,7 +496,7 @@ with bot:
                     )
                 )
             else:
-                reply_pop_up_alert = f"Eror 404 not found Saya Userbot Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
+                reply_pop_up_alert = f"Eror 404 not found 📍Treep-Bot📍 Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
