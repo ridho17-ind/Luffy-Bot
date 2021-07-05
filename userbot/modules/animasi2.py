@@ -216,9 +216,9 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("🐧")
+    await typew.edit("❤")
     sleep(2)
-    await typew.edit("**🐧LINUX - USERBOT🐧**\n\n [Tekan Disini](https://github.com/ferikunn/Linux-Userbot)\n Kalian kya Babi...")
+    await typew.edit("**📍Treep-Bot📍**\n\n [Tekan Disini](https://github.com/ferikunn/Treep-Bot)\n Kalian seperti Babi...")
 
 CMD_HELP.update({
     "animasi2":
