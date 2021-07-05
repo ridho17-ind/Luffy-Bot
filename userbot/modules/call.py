@@ -1,6 +1,6 @@
 # Ultroid - UserBot
 # Copyright (C) 2020 TeamUltroid
-# 
+#
 # Recode by Geez-Userbot
 # Ini Belum Ke Fix Ya Bg :')
 
