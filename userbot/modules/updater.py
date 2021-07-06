@@ -67,7 +67,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             )
             return repo.__del__()
         await event.edit('`[HEROKU]:'
-                         '\nDyno 📍Treep-Bot📍 Sedang Dalam Proses, Mohon Menunggu 7-8 Menit`'
+                         '\n📍Treep-Bot📍 Sedang Dalam Proses, Mohon Menunggu 7-8 Menit`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -98,7 +98,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                "`Linux-Userbot Berhasil Di Update`")
+                "`📍Treep-Bot📍 Berhasil Di Update`")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -139,7 +139,7 @@ async def update(event, repo, ups_rem, ac_br):
 @ register(outgoing=True, pattern=r"^.update(?: |$)(now|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
-    await event.edit("`Sedang melakukan Pembaharuan.........`")
+    await event.edit("`Sedang Di Perbarui.........`")
     conf = event.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
     force_update = False
