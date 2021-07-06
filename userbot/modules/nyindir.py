@@ -91,6 +91,7 @@ async def typewriter(typew):
     sleep(1)
     await typew.edit("**MUKA BAPAK LU KEK KELAPA SAWIT ANJING, GA USAH NGATAIN ORANG, MUKA LU AJA KEK GEMBEL TEXAS GOBLOK!!**")
 
+
 CMD_HELP.update({
     "nyindir":
     "•CMD: `.tua`\
