@@ -161,7 +161,7 @@ async def bot_ver(event):
 
         await event.edit(
             "**⚜-**📍Treep-Bot📍 Versi:** \n "
-            f"heads/Linux-Userbot-0-x634i7u1"
+            f"heads/Treep-Bot-0-x634i7u1"
             "\n**⚜-**Revisi:**\n "
             f"{revout}"
         )
@@ -348,11 +348,11 @@ async def redis(alive):
         f"╭╼════════════════════╾╮ \n"
         f"│    ⇱  𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐃𝐚𝐭𝐚𝐧𝐠 𝐃𝐢 𝐀𝐥𝐢𝐯𝐞 ⇲ \n"
         f"┟╼════════════════════╾┤ \n"
-        f"╟◈ `Tuan    :`{DEFAULTUSER} \n"
+        f"╟◈ `Tuan     :`{DEFAULTUSER} \n"
         f"╟◈ `Username :`@{user.username} \n"
         f"╟◈ `Telethon :`v. {version.__version__} \n"
         f"╟◈ `Python   :`v. {python_version()} \n"
-        f"╟◈ `Branch    :`{UPSTREAM_REPO_BRANCH} \n"
+        f"╟◈ `Branch   :`{UPSTREAM_REPO_BRANCH} \n"
         f"╟◈ `Bot Ver  :`v. {BOT_VER} \n"
         f"╟◈ `Plugins  :`{len(modules)} Plugins \n"
         f"┞╼════════════════════╾┤ \n"
