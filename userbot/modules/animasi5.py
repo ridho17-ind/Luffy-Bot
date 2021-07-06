@@ -316,15 +316,15 @@ async def typewriter(typew):
     await typew.edit(".                       /¯ )\n                      /¯  /\n                    /    /\n              /´¯/'   '/´¯¯`•¸\n          /'/   /    /       /¨¯\\ \n        ('(   (   (   (  ¯~/'  ')\n         \\                        /\n          \\                _.•´\n            \\              (\n              \\  ")
 
 CMD_HELP.update({
-    "vip":
+    "animasi5":
     "`.bulan` ; `.hati` ; `.bernyanyi`\
-    \n🐧CMD🐧: liat aja.\
+    \nCMD: liat aja.\
     \n\n`.helikopter` ; `.tank` ; `.tembak`\n`.bundir`\
-    \n🐧CMD🐧: liat sendiri\
+    \nCMD: liat sendiri\
     \n\n`.y`\
-    \n🐧CMD🐧: jempol\
+    \nCMD: jempol\
     \n\n`.awkwok`\
-    \n🐧CMD🐧: ketawa lari.\
+    \nCMD: ketawa lari.\
     \n\n`.ular` ; `.babi` ; `.foff` ; `.foto` ; `.ajg`\
-    \n🐧CMD🐧: liat sendiri."
+    \nCMD: liat sendiri."
 })
