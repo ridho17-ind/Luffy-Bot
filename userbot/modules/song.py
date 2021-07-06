@@ -1,6 +1,6 @@
 # Ported By Vicky / @Vckyouuu
 
-
+from ShazamAPI import Shazam
 import json
 import os
 import random
