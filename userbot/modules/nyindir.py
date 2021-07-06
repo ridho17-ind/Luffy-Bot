@@ -54,7 +54,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("**ELU TUH JANGAN SO KAYA TOLOL ELU KEK GITU BIAR DI BILANG APA PANSOS LU DI SINI GOBLOK GOBLOK YANG ADA ELU KESINI DI HINA KARNA TEMEN ELU YANG TOLOL SEGALA NYENGOL NYENGOL ALIANSI GUA BIAR APA ELU MAU PANSOS KARNA DI SINI BANYAK CEWE GUA TAU ELU DI YOLOYO TUH NYARI CEWE KARNA ELU DI DUNIA NYATA GADA YANG MAU KARNA MUKA ELU TUH BURUK RUPA HINA SINI DAH MUKA ELU YANG HINA BIAR TAU GIMANA MUKA ELU YANG HINA GUA LUDAHIN**")
+    await typew.edit("**ELU TUH JANGAN SO KAYA TOLOL ELU KEK GITU BIAR DI BILANG APA PANSOS LU DI SINI GOBLOK GOBLOK YANG ADA ELU KESINI DI HINA KARNA TEMEN ELU YANG TOLOL SEGALA NYENGOL NYENGOL ALIANSI GUA BIAR APA ELU MAU PANSOS KARNA DI SINI BANYAK CEWE GUA TAU ELU DI GRUP TUH NYARI CEWE KARNA ELU DI DUNIA NYATA GADA YANG MAU KARNA MUKA ELU TUH BURUK RUPA HINA SINI DAH MUKA ELU YANG HINA BIAR TAU GIMANA MUKA ELU YANG HINA GUA LUDAHIN**")
 
 
 @register(outgoing=True, pattern='^.lah(?: |$)(.*)')
@@ -64,8 +64,15 @@ async def typewriter(typew):
     await typew.edit("**ORANG TUA LO DAPET DUIT SUSAH GA BAKAL PERCAYA GUA DIA DAPET DUIT HALAL KE HARAM KE, GAPERCAYA SAMA ORANG MISKIN KAYA LO YA BURUK TYPO LO BIKIN GUA ENEGGG, RUMAH MASI TENDA AJA BELAGU TOLOL WKWKWK GOBLOK MANGKANYA TANYAIN EMA ELU YANG JADI BABU DIRUMAH ELU JANGAN BISA NYA NGANDELIN EMA ELU MULU JADI BABU DIRUMAH GUA SUKA KASIAN RUMAH GUA KAN GEDE YA EMA ELU KAN UDH TUA PEOT BAU TANAH BENTAR LAGI JUGA MATI. NIH GUA BILANGIN YA KALO WAR TYPING BALESS KOSA KATA LAWAN GUE TOLOL JANGANN MALAH BILANG SOK TAUU ITU TANDA NYA LU KALAHH TOLOLL AHAHAHA GOBLOK**")
 
 
+@register(outgoing=True, pattern='^.cwe(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("**Buat cewe gausa so soan ngeghosting mane muka lu kaya puting Item dekil, kalau bening ya masih mending gw saranin nih ye kalau akal kecil masih kaya kelingking mending gausa deh, mending lu pergi mancing**")
+
+
 CMD_HELP.update({
-    "nyindir1":
+    "nyindir":
     "•CMD: `.tua`\
     \n•Penjelasan: Gatau cek sendiri asu\
     \n\n•CMD: `.stress`\
@@ -79,5 +86,7 @@ CMD_HELP.update({
     \n\n•CMD: `.nyg`\
     \n•Penjelasan: bacotin org nyenggol\
     \n\n•CMD: `.lah`\
-    \n•Penjelasan: bacotin org kalah."
+    \n•Penjelasan: bacotin org kalah\
+    \n\n•CMD: `.cwe`\
+    \n•Penjelasan: bacotin cewe ghosting."
 })
