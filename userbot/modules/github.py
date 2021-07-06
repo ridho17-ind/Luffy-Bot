@@ -1,6 +1,14 @@
+# Copyright (C) 2019 The Raphielscape Company LLC.
+#
+# Licensed under the Raphielscape Public License, Version 1.d (the "License");
+# you may not use this file except in compliance with the License.
+#
+""" Userbot module for filter commands """
+
 import aiohttp
-from userbot.events import register
+
 from userbot import CMD_HELP
+from userbot.events import register
 
 
 @register(pattern=r".git (.*)", outgoing=True)
@@ -10,8 +18,9 @@ async def github(event):
     async with aiohttp.ClientSession() as session:
         async with session.get(URL) as request:
             if request.status == 404:
-                return await event.reply("`" + event.pattern_match.group(1) +
-                                         " not found`")
+                return await event.reply(
+                    "`" + event.pattern_match.group(1) + " not found`"
+                )
 
             result = await request.json()
 
@@ -22,13 +31,9 @@ async def github(event):
             created_at = result.get("created_at", "Not Found")
 
             REPLY = (
-                f"Info Akun GitHub `{username}`\n"
-                f"`Nama Pengguna :` {name}\n"
-                f"`Bio           :` {bio}\n"
-                f"`URL           :` {url}\n"
-                f"`Perusahaan    :` {company}\n"
-                f"`Dibuat pada   :` {created_at}`\n"
-                f"`Info lainnya  : [Disini](https://api.github.com/users/{username}/events/public)"
+                f"GitHub Info for `{event.pattern_match.group(1)}`"
+                f"\nUsername: `{name}`\nBio: `{bio}`\nURL: {url}"
+                f"\nCompany: `{company}`\nCreated at: `{created_at}`"
             )
 
             if not result.get("repos_url", None):
@@ -40,7 +45,7 @@ async def github(event):
 
                 result = await request.json()
 
-                REPLY += "\nRepo:\n"
+                REPLY += "\nRepos:\n"
 
                 for nr in range(len(result)):
                     REPLY += f"[{result[nr].get('name', None)}]({result[nr].get('html_url', None)})\n"
@@ -48,7 +53,11 @@ async def github(event):
                 await event.edit(REPLY)
 
 
-CMD_HELP.update({
-    "github": ".git <username>"
-    "\nPenjelasan: Seperti .whois tetapi untuk nama pengguna GitHub."
-})
+CMD_HELP.update(
+    {
+        "github": "**Plugin : **`github`\
+        \n\n  •  **Syntax :** `.git` <username>\
+        \n  •  **Function : **Seperti .whois tapi untuk informasi akun GitHub.\
+    "
+    }
+)
