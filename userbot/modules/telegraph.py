@@ -14,7 +14,7 @@ auth_url = r["auth_url"]
 
 @register(outgoing=True, pattern=r"^\.tg (m|t)$")
 async def telegraphs(graph):
-    await graph.edit("`Sedang Mengunggah foto...⚡️`")
+    await graph.edit("`Sedang Mengunggah foto ke telegraph...`")
     if not graph.text[0].isalpha() and graph.text[0] not in (
             "/", "#", "@", "!"):
         if graph.fwd_from:
@@ -50,7 +50,7 @@ async def telegraphs(graph):
                     ms_two = (end - start).seconds
                     os.remove(downloaded_file_name)
                     await graph.edit(
-                        "Berhasil Mengunggah Ke [Telegraph](https://telegra.ph{}).".format(
+                        "Berhasil Mengunggah Ke [Telegrap](https://telegra.ph{}).".format(
                             media_urls[0], (ms + ms_two)
                         ),
                         link_preview=True,
@@ -93,5 +93,5 @@ def resize_image(image):
     im.save(image, "PNG")
 
 
-CMD_HELP.update({"telegraph": ">⚡️CMD⚡️`.tg` <m|t>"
+CMD_HELP.update({"telegraph": ">CMD:`.tg` <m|t>"
                  "\nUsage: Mengunggah t(Teks) Atau m(Media) Ke Telegraph."})
