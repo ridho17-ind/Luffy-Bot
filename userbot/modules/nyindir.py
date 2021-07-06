@@ -85,6 +85,12 @@ async def typewriter(typew):
     await typew.edit("**BERAPA KALI SI GUA BILANG GUA GA BAKAL IRI SAMA ORANG JELEK YANG BENTUKANYA KAYA UNDUR UNDUR**")
 
 
+@register(outgoing=True, pattern='^.cih(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("**MUKA BAPAK LU KEK KELAPA SAWIT ANJING, GA USAH NGATAIN ORANG, MUKA LU AJA KEK GEMBEL TEXAS GOBLOK!!**")
+
 CMD_HELP.update({
     "nyindir":
     "•CMD: `.tua`\
@@ -106,5 +112,7 @@ CMD_HELP.update({
     \n•CMD: `.gs`\
     \n•Penjelasan: bacotin orang autis\
     \n•CMD: `.jele`\
-    \n•Penjelasan: bacotin orang Buriq."
+    \n•Penjelasan: bacotin orang Buriq\
+    \n•CMD: `.cih`\
+    \n•Penjelasan: bacotin orang dongo."
 })
