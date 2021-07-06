@@ -104,7 +104,7 @@ CMD_HELP.update({
     \n\n•CMD: `.cwe`\
     \n•Penjelasan: bacotin cewe ghosting\
     \n•CMD: `.gs`\
-    \n•Penjelasan: bacotin orang autis."
-    \n•CMD: `.jele`
+    \n•Penjelasan: bacotin orang autis\
+    \n•CMD: `.jele`\
     \n•Penjelasan: bacotin orang Buriq."
 })
