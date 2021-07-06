@@ -195,6 +195,8 @@ CMD_HELP.update(
          \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ceklirik` `<reply judul lagu/video>`\
          \n↳ : `Reply Video Agar Tau Judul Lagu/Video`\
          \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.lirik` <Penyanyi atau Band - Judul Lagu>`\
-         \n↳ : Mencari Lirik Lagu Yang Diinginkan."
+         \n↳ : Mencari Lirik Lagu Yang Diinginkan\
+         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.shazam` <reply ke audio>`\
+         \n↳ : Mencari judul Lagu Yang Diinginkan."
     }
 )
