@@ -97,7 +97,7 @@ def register(**args):
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
                     text = "**LINUX-USERBOT ERROR**\n"
-                    link = "Silahkan chat: @xflicks"
+                    link = "Silahkan chat: @Rorflame"
                     text += "Untuk melaporkan kesalahan"
                     text += f"- tinggal teruskan pesan ini {link}.\n"
                     text += "Apis Siap Membantu Kamu\n"
