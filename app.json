@@ -1,6 +1,6 @@
 {
-  "name": "Treep-Bot",
-  "description": "[Treep-Bot] USERBOT TELEGRAM.",
+  "name": "luffy-Bot",
+  "description": "[luffy-Bot] USERBOT TELEGRAM.",
   "logo": "https://telegra.ph/file/9046e7a773c1694deda14.jpg",
   "keywords": [
     "telegram",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/ferikunn/Treep-Bot",
-  "telegram": "https://t.me/xflicks",
-  "success_url": "https://t.me/treepdisini",
+  "repository": "https://github.com/Abror0110/luffy-Bot",
+  "telegram": "https://t.me/Rorflame",
+  "success_url": "https://t.me/Roomchatvirtual",
   "stack": "container",
   "env": {
     "API_KEY": {
