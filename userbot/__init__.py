@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 # inline credit @keselekpermen69
-# Pengguna 📍Treep-Bot📍
+# Pengguna 💀luffy-Bot💀
 """ Userbot initialization. """
 
 import os
@@ -101,9 +101,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/ferikunn/Treep-Bot")
+    "https://github.com/Abror0110/luffy-Bot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Treep-Bot")
+    "UPSTREAM_REPO_BRANCH", "luffy-Bot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -319,7 +319,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "`📍Treep-Bot📍 Telah Aktif`")
+    await bot.send_message(BOTLOG_CHATID, "`💀luffy-Bot💀 Telah Aktif`")
     return
 
 with bot:
@@ -349,7 +349,7 @@ def paginate_help(page_number, loaded_modules, prefix):
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
-        custom.Button.inline("{} {} 📍".format("📍", x), data="ub_modul_{}".format(x))
+        custom.Button.inline("{} {} 💀".format("💀", x), data="ub_modul_{}".format(x))
         for x in helpable_modules
     ]
     pairs = list(zip(modules[::number_of_cols],
@@ -390,7 +390,7 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("📍Treep-Bot📍, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/ferikunn/Treep-Bot.git)")
+                await event.reply("💀luffy-Bot💀, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/Abror0110/luffy-Bot.git)")
             else:
                 await event.reply(f"`Hai Tuan {ALIVE_NAME}\n\nApa Kabarmu? ^_^`")
 
@@ -404,7 +404,7 @@ with bot:
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
                     text="{}\n\n**☯ Jumlah Modul Yang Tersedia:** `{}`\n               \n**☯ Daftar Modul Saya Userbot:** \n".format(
-                        "**📍Treep-Bot📍**",
+                        "**💀luffy-Bot💀**",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -418,16 +418,16 @@ with bot:
                     link_preview=True)
             else:
                 result = builder.article(
-                    "**📍Treep-Bot📍**",
-                    text="""**Anda Bisa Membuat Userbot Anda Sendiri Dengan Cara:** [Tekan Disini](https://github.com/ferikunn/Treep-Bot)""",
+                    "**💀luffy-Bot💀**",
+                    text="""**Anda Bisa Membuat Userbot Anda Sendiri Dengan Cara:** [Tekan Disini](https://github.com/Abror0110/luffy-Bot)""",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Repositories",
-                                "https://github.com/ferikunn/Treep-Bot"),
+                                "https://github.com/Abror0110/luffy-Bot"),
                             custom.Button.url(
                                 "Pemilik",
-                                "t.me/xflicks")],
+                                "t.me/Rorflame")],
                     ],
                     link_preview=False,
                 )
@@ -447,7 +447,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Eror 404 not found 📍Treep-Bot📍 Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
+                reply_pop_up_alert = f"Eror 404 not found 💀luffy-Bot💀 Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -465,7 +465,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"Eror 404 not found 📍Treep-Bot📍 Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
+                reply_pop_up_alert = f"Eror 404 not found 💀luffy-Bot💀 Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
         @tgbot.on(
@@ -496,7 +496,7 @@ with bot:
                     )
                 )
             else:
-                reply_pop_up_alert = f"Eror 404 not found 📍Treep-Bot📍 Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
+                reply_pop_up_alert = f"Eror 404 not found 💀luffy-Bot💀 Anda Sendiri, Jangan Menggunakan Milik Tuan {ALIVE_NAME}"
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
