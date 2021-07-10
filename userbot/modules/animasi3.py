@@ -3,11 +3,11 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 
-@register(outgoing=True, pattern='^.feri(?: |$)(.*)')
+@register(outgoing=True, pattern='^.luffy(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(3)
-    await typew.edit("`Hai Perkenalkan Namaku Feri`")
+    await typew.edit("`Hai Perkenalkan Namaku luffy`")
     sleep(3)
     await typew.edit("`17 Tahun`")
     sleep(1)
