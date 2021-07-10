@@ -11,7 +11,7 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("`17 Tahun`")
     sleep(1)
-    await typew.edit("`Tinggal Di Trenggalek, Salam Kenal:)`")
+    await typew.edit("`Tinggal Di Bangka belitung, Salam Kenal:)`")
 
 
 @register(outgoing=True, pattern='^ilyu(?: |$)(.*)')
