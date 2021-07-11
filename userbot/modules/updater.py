@@ -53,7 +53,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari 📍Treep-Bot📍.`'
+                ' untuk dapat deploy perubahan terbaru dari 💀luffy-Bot💀.`'
             )
             repo.__del__()
             return
@@ -63,11 +63,11 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy 📍Treep-Bot📍.`'
+                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy 💀luffy-Bot💀.`'
             )
             return repo.__del__()
         await event.edit('`[HEROKU]:'
-                         '\n📍Treep-Bot📍 Sedang Dalam Proses, Mohon Menunggu 7-8 Menit`'
+                         '\n💀luffy-Bot💀 Sedang Dalam Proses, Mohon Menunggu 7-8 Menit`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -91,14 +91,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`📍Treep-Bot📍 Berhasil Di Deploy!\n" "Restarting, Mohon Menunggu Tuan.....`")
+            await event.edit("`💀luffy-Bot💀 Berhasil Di Deploy!\n" "Restarting, Mohon Menunggu Tuan.....`")
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                "`📍Treep-Bot📍 Berhasil Di Update`")
+                "`💀luffy-Bot💀 Berhasil Di Update`")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -115,9 +115,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('**📍Treep-Bot📍** `Berhasil Di Update!`')
+    await event.edit('**💀luffy-Bot💀** `Berhasil Di Update!`')
     await asyncio.sleep(1)
-    await event.edit('**📍Treep-Bot📍** `Di Restart....`')
+    await event.edit('**💀luffy-Bot💀** `Di Restart....`')
     await asyncio.sleep(1)
     await event.edit('`Mohon Menunggu Beberapa Detik Sayang`')
     await asyncio.sleep(10)
@@ -126,7 +126,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#BOT \n"
-            "**📍Treep-Bot📍 Telah Di Perbarui**")
+            "**💀luffy-Bot💀 Telah Di Perbarui**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -188,13 +188,13 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n**📍Treep-Bot📍 Sudah Versi Terbaru**\n')
+            f'\n**💀luffy-Bot💀 Sudah Versi Terbaru**\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f'**🛠️ Pembaruan Untuk 📍Treep-Bot📍 [{ac_br}]:\n\n🛠️ Pembaruan:**\n`{changelog}`'
+        changelog_str = f'**🛠️ Pembaruan Untuk 💀luffy-Bot💀 [{ac_br}]:\n\n🛠️ Pembaruan:**\n`{changelog}`'
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -208,18 +208,18 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond('**Perintah Untuk Update 📍Treep-Bot📍**\n >`.update now`\n >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru.__')
+        return await event.respond('**Perintah Untuk Update 💀luffy-Bot💀**\n >`.update now`\n >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru.__')
 
     if force_update:
         await event.edit(
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
     else:
-        await event.edit('`🛠️ Proses Update 📍Treep-Bot📍, Loading....1%`')
-        await event.edit('`🛠️ Proses Update 📍Treep-Bot📍, Loading....20%`')
-        await event.edit('`🛠️ Proses Update 📍Treep-Bot📍, Loading....35%`')
-        await event.edit('`🛠️ Proses Update 📍Treep-Bot📍, Loading....77%`')
-        await event.edit('`🛠️ Proses Update 📍Treep-Bot📍, Updating...90%`')
-        await event.edit('`🛠️ Proses Update 📍Treep-Bot📍, Mohon Menunggu Sayang....100%`')
+        await event.edit('`🛠️ Proses Update 💀luffy-Bot💀, Loading....1%`')
+        await event.edit('`🛠️ Proses Update 💀luffy-Bot💀, Loading....20%`')
+        await event.edit('`🛠️ Proses Update 💀luffy-Bot💀, Loading....35%`')
+        await event.edit('`🛠️ Proses Update 💀luffy-Bot💀, Loading....77%`')
+        await event.edit('`🛠️ Proses Update 💀luffy-Bot💀, Updating...90%`')
+        await event.edit('`🛠️ Proses Update 💀luffy-Bot💀, Mohon Menunggu Sayang....100%`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
@@ -234,9 +234,9 @@ async def upstream(event):
 CMD_HELP.update({
     'update':
     ".update"
-    "\nCMD: Untuk Melihat Pembaruan Terbaru 📍Treep-Bot📍."
+    "\nCMD: Untuk Melihat Pembaruan Terbaru 💀luffy-Bot💀."
     "\n\n.update now"
-    "\nCMD: Memperbarui 📍Treep-Bot📍."
+    "\nCMD: Memperbarui 💀luffy-Bot💀."
     "\n\n.update deploy"
-    "\nCMD: Memperbarui 📍Treep-Bot📍 Dengan Cara Deploy Ulang."
+    "\nCMD: Memperbarui 💀luffy-Bot💀 Dengan Cara Deploy Ulang."
 })
