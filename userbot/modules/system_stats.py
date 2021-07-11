@@ -160,7 +160,7 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**⚜-**📍Treep-Bot📍 Versi:** \n "
+            "**⚜-**💀luffy-Bot💀 Versi:** \n "
             f"heads/Treep-Bot-0-x634i7u1"
             "\n**⚜-**Revisi:**\n "
             f"{revout}"
@@ -219,12 +219,12 @@ async def pipcheck(pip):
         await pip.edit("Gunakan `.help pip` Untuk Melihat Contoh")
 
 
-@register(outgoing=True, pattern=r"^\.(?:Treep|Treepon|treep|treepon)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:Treep|Treepon|treep|Treepon)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**📍Treep-Bot📍** \n"
+        f"**💀luffy-Bot💀** \n"
         f"\n__**{TREEP_TEKS_KUSTOM}**__\n"
         f"**══════════════════════**\n"
         f"**Tuan** \n"
@@ -263,14 +263,14 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"══════════════════════\n"
-        f"     **📍Treep-Bot📍** \n\n"
-        f"📍 **Majikan**  \n   ↳ `{DEFAULTUSER}` \n"
+        f"     **💀luffy-Bot💀** \n\n"
+        f"💀 **Majikan**  \n   ↳ `{DEFAULTUSER}` \n"
         f"👤 **Username** \n   ↳ `@{user.username}` \n"
         f"⚙️ **Telethon** \n   ↳ `Versi {version.__version__}` \n"
         f"🐍 **Python**   \n   ↳ `Versi {python_version()}` \n"
         f"👾 **Versi Bot**\n   ↳ `{BOT_VER}` \n"
         f"📂 **Modul**    \n   ↳ `{len(modules)}` \n\n"
-        f"♚ **Repositories:** [📍Treep-Bot📍](https://github.com/ferikunn/Treep-Bot)\n🛠️ **Group Support: **[JOIN](https://t.me/treepdisini)\n👨‍💻 **Mastah:** [Feri](t.me/xflicks)\n"
+        f"♚ **Repositories:** [💀luffy-Bot💀](https://github.com/Abror0110/luffy-Bot)\n🛠️ **Group Support: **[JOIN](https://t.me/Roomchatvirtual)\n👨‍💻 **Mastah:** [Luffy](t.me/Rorflame)\n"
         f"══════════════════════")
     if ALIVE_LOGO:
         try:
@@ -296,16 +296,16 @@ async def amireallyalive(alive):
 async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("..📍Treep-Bot📍..")
+    await alive.edit("..💀luffy-Bot💀..")
     output = (
-        f"════════📍Treep-Bot📍═════════\n"
+        f"════════💀luffy-Bot💀═════════\n"
         f"**Nama Creator Kami**\n"
-        f"╟◈🛠️ Developer : [Feri](t.me/xflicks) \n"
-        f"╟◈🛠️ Developer : [Feri](t.me/xflicks) \n"
-        f"╟◈👤 Contributor : [Feri](t.me/xflicks) \n"
+        f"╟◈🛠️ Developer : [Luffy](t.me/Rorflame) \n"
+        f"╟◈🛠️ Developer : [Luffy](t.me/Rorflame) \n"
+        f"╟◈👤 Contributor : [Luffy](t.me/Rorflame) \n"
         f"╰╼═══════════════════╾╯\n"
         f"**Terimakasih Telah Menggunakan Project Userbot Kami** 🙏 \n"
-        f"═════════📍Treep-Bot📍═════════════")
+        f"═════════💀luffy-Bot💀═════════════")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -336,14 +336,14 @@ async def redis(alive):
     await alive.edit("__....Userbot....__")
     await alive.edit("__Connecting...Alive.....__")
     await alive.edit("__.....Program.....__")
-    await alive.edit("__.....📍Treep-Bot📍.....__")
+    await alive.edit("__.....💀luffy-Bot💀.....__")
     await alive.edit("__Connecting to server..__")
     await alive.edit("__Connecting to server...__")
-    await alive.edit("📍")
+    await alive.edit("💀")
     await asyncio.sleep(2)
     output = (
         f"**ㅤㅤ  ╭─━━═━═━═━═━━─╮** \n"
-        f"**       ⊏┊📍Treep-Bot📍 ⊨🛠️ ** \n"
+        f"**       ⊏┊💀luffy-Bot💀 ⊨🛠️ ** \n"
         f"**ㅤㅤ  ╰─━━═━═━═━═━━─╯** \n"
         f"╭╼════════════════════╾╮ \n"
         f"│    ⇱  𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐃𝐚𝐭𝐚𝐧𝐠 𝐃𝐢 𝐀𝐥𝐢𝐯𝐞 ⇲ \n"
@@ -359,8 +359,8 @@ async def redis(alive):
         f"├◈ **Jangan lupa untuk mendukung kami** \n"
         f"│    **userbot, cara menekan di bawah ini.** \n"
         f"╰╼════════════════════╾╯ \n"
-        f"| [Repo](https://github.com/ferikunn/Treep-Bot) | [Group-Help](t.me/treepdisini) | "
-        f"[Pemilik](t.me/xflicks) | ")
+        f"| [Repo](https://github.com/Abror0110/luffy-Bot) | [Group-Help](t.me/Roomchatvirtual) | "
+        f"[Pemilik](t.me/Rorflame) | ")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
