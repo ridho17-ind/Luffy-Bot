@@ -69,8 +69,8 @@ async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("📍Treep-Bot📍")
-    await pong.edit("__**...Treep...**__")
+    await pong.edit("💀luffy-Bot💀")
+    await pong.edit("__**...luffy...**__")
     await pong.edit("__**.....USERBOT.....**__")
     await pong.edit("__**......MOHON MENUNGGU......**__")
     await pong.edit("**0% ▒▒▒▒▒▒▒▒▒▒**")
@@ -81,7 +81,7 @@ async def pingme(pong):
     await pong.edit("**100% ██████████**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**╰━❖ Treep Ping ❖━╯**\n"
+    await pong.edit(f"**╰━❖ luffy Ping ❖━╯**\n"
                     f"☞ __ping:__ "
                     f"`%sms` \n"
                     f"☞ __i'm online:__ "
@@ -93,11 +93,11 @@ async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("`.....📍Treep-Bot📍.....`")
-    await pong.edit("`📍`")
+    await pong.edit("`.....💀luffy-Bot💀.....`")
+    await pong.edit("`💀`")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"•⎚• ⎆ __Treep__ **Pong!**\n"
+    await pong.edit(f"•⎚• ⎆ __luffy__ **Pong!**\n"
                     f"☞  __Ping:__ "
                     f"`%sms` \n"
                     f"☞  __Sisa Waktu:__ "
@@ -181,7 +181,7 @@ async def speedtst(spd):
                    f"`{result['ping']}` \n"
                    "⚙️ **ISP:** "
                    f"`{result['client']['isp']}` \n"
-                   "⚙️ **BOT:** `📍Treep-Bot📍`")
+                   "⚙️ **BOT:** `💀luffy-Bot💀`")
 
 
 def speed_convert(size):
@@ -215,7 +215,7 @@ async def pingme(pong):
     await pong.edit("`Pong🏎...........`")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await pong.edit("⎚⎆ __Treep__ **Test Ping!**\n`%sms`" % (duration))
+    await pong.edit("⎚⎆ __luffy__ **Test Ping!**\n`%sms`" % (duration))
 
 CMD_HELP.update({
     "ping":
