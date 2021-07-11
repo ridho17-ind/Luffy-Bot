@@ -70,7 +70,7 @@ CMD_HELP.update({
     "animasi3":
    "CMD`.elsa
 \npenjelasan: Cek lh asw.\
-   "CMD`.pe`\
+\n\nCMD:`.pe`\
 \nPenjelasan: Cek lah asw.\
 \n\nCMD:`.luffy`\
 \nPenjelasan: Cek lah asw.\
