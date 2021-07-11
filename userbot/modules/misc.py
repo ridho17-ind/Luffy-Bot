@@ -65,23 +65,23 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan 📍Treep-Bot📍....`")
+    await event.edit("`Mematikan 💀luffy-Bot💀....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#SHUTDOWN \n"
-                                        "`📍Treep-Bot📍 Telah Dimatikan`")
+                                        "`💀luffy-Bot💀 Telah Dimatikan`")
     await bot.disconnect()
 
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting 📍Treep-Bot📍...`")
+    await event.edit("`Restarting 💀luffy-Bot💀...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`📍Treep-Bot📍 Telah Di Restart`")
+                                        "`💀luffy-Bot💀 Telah Di Restart`")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
@@ -93,7 +93,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Beberapa Repo Dan File:\n"
-        "\n[Repositories](https://github.com/ferikunn/Treep-Bot/blob/Treep-Bot/README.md)"
+        "\n[Repositories](https://github.com/Abror0110/luffy-Bot/blob/luffy-Bot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Setup Guide - Google Drive](https://telegra.ph/How-To-Setup-GDrive-11-02)"
         "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
@@ -122,11 +122,11 @@ async def repo_is_here(wannasee):
     await wannasee.edit(
         "╭─━━━━━━━━━━━━━─╮\n"
         "                  Repo\n"
-        "     [Treep-Bot](https://github.com/ferikunn/Treep-Bot)\n"
+        "     [luffy-Bot](https://github.com/Abror0110/luffy-Bot)\n"
         "╭─━━━━━━━━━━━━━─╯\n"
-        "│👨‍💻 **Creator :** [Feri](t.me/xflicks)\n"
+        "│👨‍💻 **Creator :** [luffy](t.me/Rorflame)\n"
         "╰━━━━━━━━━━━━━━━╯\n"
-        "  Deploy      : [Tekan Disini](https://heroku.com/deploy?template=https://github.com/ferikunn/Treep-Bot)"
+        "  Deploy      : [Tekan Disini](https://heroku.com/deploy?template=https://github.com/Abror0110/luffy-Bot)"
     )
 
 
