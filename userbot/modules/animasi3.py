@@ -68,7 +68,7 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi3":
-   "CMD`.elsa
+   "CMD`.elsa`\
 \npenjelasan: Cek lh asw.\
 \n\nCMD:`.pe`\
 \nPenjelasan: Cek lah asw.\
