@@ -4,11 +4,11 @@ on:
   schedule:
     - cron: '25 3 * * *'
   push:
-    branches: [ Treep-Bot ]
+    branches: [ luffy-Bot ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
   pull_request:
-    branches: [ Treep-Bot ]
+    branches: [ luffy-Bot ]
 
 env:
   # ............
