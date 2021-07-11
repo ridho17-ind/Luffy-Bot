@@ -4,17 +4,6 @@ from userbot.events import register
 
 
 
-@register(outgoing=True, pattern='^.elsa(?: |$)(.*)')
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    sleep(3)
-    await typew.edit("`Hai perkenalkan namaku elsa`")
-    sleep(3)
-    await typew.edit("`17 Tahun`")
-    sleep(1)
-    await typew.edit("`Tinggal Di kota malang,salam kenal ya:)`")
-
-
 @register(outgoing=True, pattern='^.luffy(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -68,9 +57,7 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi3":
-\n\nCMD:`.elsa`\
-\npenjelasan: Cek lh asw.\
-\n\nCMD:`.pe`\
+     "CMD`.pe`\
 \nPenjelasan: Cek lah asw.\
 \n\nCMD:`.luffy`\
 \nPenjelasan: Cek lah asw.\
