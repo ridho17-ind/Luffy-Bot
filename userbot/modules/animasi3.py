@@ -3,19 +3,6 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 
-@register(outgoing=True, pattnern='^.elsa(?: |$)(.*)')
-async def typewriter(typew):
-    typew.pattnern_match.group(1)
-    sleep(3)
-    await typew.edit("`Hai perkenalkan namaku elsa`")
-    sleep(3)
-    await typew.edit("`17 Tahun`")
-    sleep(3)
-    await typew.edit("`Kelas 12`")
-    sleep(1)
-    await typew.edit("`Tinggal Di kota malang, salam kenal:)
-
-
 @register(outgoing=True, pattern='^.luffy(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
@@ -27,6 +14,19 @@ async def typewriter(typew):
     await typew.edit("`Kelas 12`")
     sleep(1)
     await typew.edit("`Tinggal Di Bangka belitung, Salam Kenal:)`")
+
+
+@register(outgoing=True, pattnern='^.elsa(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattnern_match.group(1)
+    sleep(3)
+    await typew.edit("`Hai perkenalkan namaku elsa`")
+    sleep(3)
+    await typew.edit("`17 Tahun`")
+    sleep(3)
+    await typew.edit("`Kelas 12`")
+    sleep(1)
+    await typew.edit("`Tinggal Di kota malang, salam kenal:)`")
 
 
 @register(outgoing=True, pattern='^ilyu(?: |$)(.*)')
