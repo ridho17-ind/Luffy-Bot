@@ -18,7 +18,7 @@ async def typewriter(typew):
 
 @register(outgoing=True, pattnern='^.elsa(?: |$)(.*)')
 async def typewriter(typew):
-    typew.pattnern_match.group(1)
+    typew.pattern_match.group(1)
     sleep(3)
     await typew.edit("`Hai perkenalkan namaku elsa`")
     sleep(3)
