@@ -16,7 +16,7 @@ async def typewriter(typew):
     await typew.edit("`Tinggal Di Bangka belitung, Salam Kenal:)`")
 
 
-@register(outgoing=True, pattnern='^.elsa(?: |$)(.*)')
+@register(outgoing=True, pattern='^.elsa(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(3)
