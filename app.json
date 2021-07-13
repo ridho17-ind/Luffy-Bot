@@ -1,7 +1,7 @@
 {
-  "name": "luffy-Bot",
+  "name": "Luffy-userbot",
   "description": "[luffy-Bot] USERBOT TELEGRAM.",
-  "logo": "https://telegra.ph/file/9046e7a773c1694deda14.jpg",
+  "logo": "https://telegra.ph/file/af8825276e64712e8aa67.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Abror0110/luffy-Bot",
+  "repository": "https://github.com/Abror0110/Luffy-userbot",
   "telegram": "https://t.me/Rorflame",
   "success_url": "https://t.me/Roomchatvirtual",
   "stack": "container",
