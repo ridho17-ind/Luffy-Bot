@@ -134,7 +134,7 @@ async def pingme(pong):
     await pong.edit("**100% ██████████**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"- Linux -\n"
+    await pong.edit(f"- Luffy-Bot -\n"
                     f"**☞ sinyal  :** "
                     f"`%sms` \n"
                     f"**☞ i'm online  :** "
@@ -147,7 +147,7 @@ async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("`.....☞Linux Userbot☜.....`")
+    await pong.edit("`.....☞Luffy Userbot☜.....`")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"**Treep Pong**\n"
