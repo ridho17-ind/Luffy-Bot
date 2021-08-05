@@ -12,7 +12,6 @@ import random
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos
 
-from . import *
 
 
 @ultroid_cmd(pattern="logo ?(.*)")
