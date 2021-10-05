@@ -110,7 +110,8 @@ class Player:
             VIDEO_ON.update({self._chat: self.group_call})
         if self._chat not in ACTIVE_CALLS:
             try:
-                self.group_call.on_network_status_changed(self.on_network_changed)
+                self.group_call.on_network_status_changed(
+                    self.on_network_changed)
                 self.group_call.on_playout_ended(self.playout_ended_handler)
                 await self.group_call.join(self._chat)
             except GroupCallNotFoundError:
@@ -372,7 +373,14 @@ async def dl_playlist(chat, from_user, link):
                 duration = vid.get("duration") or "♾"
                 title = vid["title"]
                 thumb = f"https://i.ytimg.com/vi/{vid['id']}/hqdefault.jpg"
-                add_to_queue(chat, None, title, vid["link"], thumb, from_user, duration)
+                add_to_queue(
+                    chat,
+                    None,
+                    title,
+                    vid["link"],
+                    thumb,
+                    from_user,
+                    duration)
             except Exception as er:
                 LOGS.exception(er)
 
@@ -392,7 +400,9 @@ async def file_download(event, reply, fast_download=True):
         dl = dl.name
     else:
         dl = await reply.download_media()
-    duration = time_formatter(reply.file.duration * 1000) if reply.file.duration else "🤷‍♂️"
+    duration = time_formatter(
+        reply.file.duration *
+        1000) if reply.file.duration else "🤷‍♂️"
     if reply.document.thumbs:
         thumb = await reply.download_media("vcbot/downloads/", thumb=-1)
     return dl, thumb, title, reply.message_link, duration

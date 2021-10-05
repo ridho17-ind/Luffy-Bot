@@ -125,4 +125,3 @@ CMD_HELP.update({
     \n•CMD: `.tw`\
     \n•Penjelasan: bacotin orang hinaaaa cuiiihhhh."
 })
-
