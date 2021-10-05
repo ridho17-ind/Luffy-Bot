@@ -102,3 +102,4 @@ opencv-python
 youtube-search-python
 nekos.py
 ShazamAPI
+pytgcalls==3.0.0.dev19
