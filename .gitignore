@@ -10,3 +10,24 @@ userbot/modules/sql_helper/__pycache__/*
 .vscode/*
 bin/*
 TG_BOT_TOKEN.session
+
+# Directories
+addons/
+pyUltroid/
+__pycache__/
+venv/
+node_modules/
+glitch_me/
+src/glitch-me
+.idea/
+.vscode/
+temp/
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+.settings/
+*.swf
+*.air
+*.ipa
+*.apk
