@@ -53,7 +53,9 @@ async def play_music_(event):
             xx, "Please specify a song name or reply to a audio file !", time=5
         )
     await eor(xx, "`Downloading and converting...`", parse_mode="md")
-    if reply and reply.media and mediainfo(reply.media).startswith(("audio", "video")):
+    if reply and reply.media and mediainfo(
+            reply.media).startswith(
+            ("audio", "video")):
         song, thumb, song_name, link, duration = await file_download(xx, reply)
     else:
         song, thumb, song_name, link, duration = await download(song)
@@ -138,7 +140,14 @@ async def play_music_(event):
             if thumb and os.path.exists(thumb):
                 os.remove(thumb)
         else:
-            add_to_queue(chat, song, song_name, link, thumb, from_user, duration)
+            add_to_queue(
+                chat,
+                song,
+                song_name,
+                link,
+                thumb,
+                from_user,
+                duration)
             if send_message and count == 1:
                 await eor(
                     msg,
