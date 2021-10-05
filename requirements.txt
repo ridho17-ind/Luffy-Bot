@@ -103,3 +103,4 @@ youtube-search-python
 nekos.py
 ShazamAPI
 pytgcalls==3.0.0.dev19
+py-Ultroid==2021.9.18
