@@ -3,11 +3,13 @@
   "description": "[luffy-Bot] USERBOT TELEGRAM.",
   "logo": "https://telegra.ph/file/9046e7a773c1694deda14.jpg",
   "keywords": [
+    "Telethon",
     "telegram",
     "userbot",
     "plugin",
     "modular",
     "productivity"
+    "python",
   ],
   "repository": "https://github.com/Abror0110/luffy-Bot",
   "telegram": "https://t.me/Rorflame",
