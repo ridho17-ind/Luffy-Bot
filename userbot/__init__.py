@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 # inline credit @keselekpermen69
-# Pengguna 💀luffy-Bot💀
+# Pengguna 🦅Luffy-Userbot🦅
 """ Userbot initialization. """
 
 import os
@@ -319,7 +319,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "`💀luffy-Bot💀 Telah Aktif`")
+    await bot.send_message(BOTLOG_CHATID, "`🦅luffy-Userbot🦅 Telah Aktif`")
     return
 
 with bot:
@@ -349,7 +349,7 @@ def paginate_help(page_number, loaded_modules, prefix):
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
-        custom.Button.inline("{} {} 💀".format("💀", x), data="ub_modul_{}".format(x))
+        custom.Button.inline("{} {} 🦅".format("🦅", x), data="ub_modul_{}".format(x))
         for x in helpable_modules
     ]
     pairs = list(zip(modules[::number_of_cols],
@@ -390,7 +390,7 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("💀Treep-Bot💀, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/Abror0110/luffy-Bot.git)")
+                await event.reply("🦅Luffy-Userbot🦅, Buat Userbot Mu Sendiri [Tekan Disini](https://github.com/ridho17-ind/Luffy-Bot)")
             else:
                 await event.reply(f"`Hai Tuan {ALIVE_NAME}\n\nApa Kabarmu? ^_^`")
 
@@ -404,7 +404,7 @@ with bot:
                 result = builder.article(
                     "Harap Gunakan .help Untuk Perintah",
                     text="{}\n\n**☯ Jumlah Modul Yang Tersedia:** `{}`\n               \n**☯ Daftar Modul Saya Userbot:** \n".format(
-                        "**💀luffy-Bot💀**",
+                        "**🦅luffy-Userbot🦅**",
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -418,13 +418,13 @@ with bot:
                     link_preview=True)
             else:
                 result = builder.article(
-                    "**💀luffy-Bot💀**",
+                    "**🦅Luffy-Userbot🦅**",
                     text="""**Anda Bisa Membuat Userbot Anda Sendiri Dengan Cara:** [Tekan Disini](https://github.com/Abror0110/luffy-Bot)""",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Repositories",
-                                "https://github.com/Abror0110/luffy-Bot"),
+                                "https://github.com/ridho17-ind/Luffy-Bot"),
                             custom.Button.url(
                                 "Pemilik",
                                 "t.me/Rorflame")],
