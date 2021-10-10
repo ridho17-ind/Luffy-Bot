@@ -11,9 +11,9 @@
     "productivity"
     "python",
   ],
-  "repository": "https://github.com/Abror0110/luffy-Bot",
+  "repository": "https://github.com/ridho-ind/luffy-Bot",
   "telegram": "https://t.me/Rorflame",
-  "success_url": "https://t.me/Roomchatvirtual",
+  "success_url": "https://t.me/RoseSupportGroups",
   "stack": "container",
   "env": {
     "API_KEY": {
