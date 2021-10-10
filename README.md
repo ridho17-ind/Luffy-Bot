@@ -32,7 +32,7 @@ String_Session [Tekan](https://replit.com/@mrismanaziz/stringen?lite=1&outputonl
 ## <p align="center">DEPLOY luffy-Bot</p>
 
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ridho-ind/luffy-Bot/tree/luffy-Bot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-magenta?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ridho17-ind/luffy-Bot/tree/luffy-Bot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-magenta?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 <br>
 </p>
