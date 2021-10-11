@@ -74,7 +74,7 @@ if CONFIG_CHECK:
     )
     sys.exit(1)
 
-# KALO NGEFORK ID DEVS SAMA ID BLACKLIST_CHAT NYA GA USAH DI HAPUS YA GOBLOK 😡
+
 DEVS = 844432220, 1906014306, 1382636419, 1712874582, 1738637033,
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 
@@ -82,8 +82,6 @@ SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001473548283]
-# JANGAN DI HAPUS GOBLOK 😡 LU COPY/EDIT AJA TINGGAL TAMBAHIN PUNYA LU
-# DI HAPUS GUA GBAN YA 🥴 GUA TANDAIN LU AKUN TELENYA 😡
 
 # Telegram App KEY and HASH
 API_KEY = int(os.environ.get("API_KEY") or 0)
